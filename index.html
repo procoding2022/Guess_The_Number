@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="icon" href="./images/logo-3fcf8340.png"> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>  
+    
+    <main class="bg-blue-800 py-20 rounded-full mt-1 sm:ml-8 sm:mt-4 sm:mr-8 sm:mb-4 lg:ml-16 lg:mr-16 xl:mt-1 xl:mr-20 xl:ml-20 xl:h-[100%] xl:mb-0 overflow-hidden xl:py-12">
+        <img src="./images/logo-3fcf8340.png" alt="" class="rounded-full w-40 block ml-auto mr-auto sm:w-48 md:w-64 lg:w-80 xl:w-[21rem]">
+        
+        <div>
+            <h1 class="text-center text-4xl text-white font-bold py-5 hover:cursor-not-allowed select-none lg:text-5xl">
+                GUESS THE NUMBER
+            </h1>
+            
+            <div>
+                
+                <h2 class="text-center text-2xl text-white font-serif py-8 hover:cursor-not-allowed select-none">
+                    Your Guess? 
+                    <input type="number" min="1" max="100" id="Guess" name="guess" placeholder="1-100" class="py-2 px-10 rounded-xl text-xl text-left text-black xl:px-20">
+                </h2>
+            </div>
+            
+            <h2 class="text-center">
+                <input type="button" id="check" value="Check" class="px-10 py-2 bg-white font-mono text-lg rounded-full hover:cursor-pointer hover:bg-fuchsia-500 hover:text-white hover:transition-all hover:duration-700 focus:bg-fuchsia-500 focus:text-white focus:transition-all active:bg-fuchsia-500 active:text-white active:transition-all active:duration-700 xl:px-20 xl:py-3 xl:text-xl">
+            </h2>
+            
+            <div>
+               <h2 class="text-center text-2xl text-white font-serif mt-16 hover:cursor-not-allowed select-none xl:mt-12">
+                    Your Score:
+                    <input type="number" min="1" max="99" id="score" name="score" placeholder="99" disabled class="py-2 px-10 rounded-xl text-xl text-left text-black bg-white hover:cursor-not-allowed xl:px-20">
+                </h2>
+                
+                <h2 class="text-center">
+                    <input type="button" id="reset" value="Reset" class="px-10 py-2 mt-4 bg-white font-mono text-lg rounded-full hover:cursor-pointer hover:bg-red-600 hover:text-white hover:transition-all hover:duration-700 focus:bg-red-600 focus:text-white focus:transition-all active:bg-red-600 active:text-white active:transition-all active:duration-700 xl:px-20 xl:py-3 xl:text-xl xl:mt-3">
+                </h2>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
