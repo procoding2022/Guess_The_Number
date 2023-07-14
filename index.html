@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="icon" href="/assets/logo-3fcf8340.png">
+    
+  <link rel="stylesheet" href="/assets/index-4bc2c6fa.css">
+</head>
+<body>  
+    <main class="bg-blue-800 py-20 mt-9 ml-20 mr-20 rounded-full">
+        <img src="/assets/logo-3fcf8340.png" alt="" class="rounded-full w-72 block ml-auto mr-auto">
+        <div class="relative">
+            <h1 class="text-center text-5xl text-white font-bold py-5 hover:cursor-not-allowed select-none">
+                GUESS THE NUMBER
+            </h1>
+            <div class="left-[50%]">
+                <h2 class="text-center text-2xl text-white font-serif py-8 hover:cursor-not-allowed select-none">
+                    Your Guess? 
+                    <input type="number" min="1" max="100" id="Guess" name="guess" placeholder="1-100" class="py-2 px-10 rounded-xl text-xl text-left text-black">
+                </h2>
+            </div>
+            <input type="button" id="check" value="Check" class="absolute left-[45%] px-10 py-2 bg-white font-mono text-lg rounded-full hover:cursor-pointer hover:bg-fuchsia-500 hover:text-white hover:transition-all hover:duration-700 focus:bg-fuchsia-500 focus:text-white focus:transition-all active:bg-fuchsia-500 active:text-white active:transition-all active:duration-700">
+            <div class="left-[50%]">
+                <h2 class="text-center text-2xl text-white font-serif mt-16 hover:cursor-not-allowed select-none">
+                    Your Score:
+                    <input type="number" min="1" max="99" id="score" name="score" placeholder="99" disabled class="py-2 px-10 rounded-xl text-xl text-left text-black bg-white hover:cursor-not-allowed">
+                </h2>
+                <input type="button" id="reset" value="Reset" class="absolute left-[45%] px-10 py-2 mt-4 bg-white font-mono text-lg rounded-full hover:cursor-pointer hover:bg-red-600 hover:text-white hover:transition-all hover:duration-700 focus:bg-red-600 focus:text-white focus:transition-all active:bg-red-600 active:text-white active:transition-all active:duration-700">
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
